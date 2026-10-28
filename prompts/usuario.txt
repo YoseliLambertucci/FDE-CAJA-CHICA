@@ -1,0 +1,7 @@
+Área que rinde: {area}
+Valor máximo permitido por pago individual en esta área: ${tope} pesos
+
+Analizá el siguiente comprobante:
+<ticket>
+{texto_ticket}
+</ticket>

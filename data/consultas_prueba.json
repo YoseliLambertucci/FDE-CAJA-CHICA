@@ -1,0 +1,47 @@
+[
+  {
+    "descripcion": "Ticket claro de papelería",
+    "decision_esperada": "aprobar",
+    "entrada": {
+      "id_empleado": "EMP-101",
+      "area": "Sec. Servicios Generales",
+      "texto_ticket": "LIBRERÍA EL PAPEL S.A.\nCUIT 30-12345678-9\nFactura B 0003-00012345\nFecha: 14/10/2026\n2 resmas A4 75g ........ $9.800,00\n1 caja biromes x50 ..... $8.700,00\nTOTAL: $18.500,00"
+    }
+  },
+  {
+    "descripcion": "Compra de limpieza en supermercado",
+    "decision_esperada": "aprobar",
+    "entrada": {
+      "id_empleado": "EMP-101",
+      "area": "Sec. Servicios Generales",
+      "texto_ticket": "SUPERMERCADO LA ESQUINA S.R.L.\nTicket fiscal Nº 0007-00098765\n02/10/2026\nLavandina 5L x3 ........ $7.500,00\nDetergente 750ml x6 .... $10.800,00\nTrapo de piso x4 ....... $6.400,00\nTOTAL $24.700,00"
+    }
+  },
+  {
+    "descripcion": "Repuesto que supera el tope del área (200.000)",
+    "decision_esperada": "revision_humana",
+    "entrada": {
+      "id_empleado": "EMP-101",
+      "area": "Sec. Servicios Generales",
+      "texto_ticket": "REPUESTOS DEL SUR S.A.\nFactura B 0001-00004567\nFecha 20/10/2026\n1 bomba de agua autoelevadora ... $230.000,00\nTOTAL: $230.000,00"
+    }
+  },
+  {
+    "descripcion": "Consulta confusa (ticket borroso e incompleto)",
+    "decision_esperada": "revision_humana",
+    "entrada": {
+      "id_empleado": "EMP-101",
+      "area": "Sec. Servicios Generales",
+      "texto_ticket": "ticket medio borroso, parece de una ferretería o algo así, se lee ...ERRETERÍA... y un total que puede ser 3.2?0 o 8.250, no se ve la fecha, tiene tornillos y otra cosa que no se entiende"
+    }
+  },
+  {
+    "descripcion": "Consulta fuera de tema",
+    "decision_esperada": "rechazar",
+    "entrada": {
+      "id_empleado": "EMP-101",
+      "area": "Sec. Servicios Generales",
+      "texto_ticket": "Hola, ¿me podés pasar una receta de milanesas al horno con papas?"
+    }
+  }
+]
